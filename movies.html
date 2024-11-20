@@ -1,0 +1,379 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows - WatchWave</title>
+    
+    <style>
+        /* Include similar global styles from index.html */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #141414;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+           
+            backface-visibility:hidden ;
+            padding: 20px 5%;
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar .logo {
+            width: 220px;
+            cursor: pointer;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+            z-index: 10000;
+            
+        }
+
+        .navbar .nav-links a,
+        .navbar .nav-links button {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .navbar .nav-links button {
+            background-color: #e50914;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+        }
+        .e{
+            border-radius: 20px;
+            margin: 50px;
+            width: 75%;
+            
+        }
+        .carousel {
+    display: flex; /* Align items in a row */
+    overflow-x: scroll; /* Allow horizontal scrolling if content overflows */
+    padding: 20px 5%; /* Padding around the carousel */
+    gap: 15px; /* Adds space between items */
+}
+
+.movie {
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 500px; /* Set a fixed width for each movie item */
+    height: 500px; /* Set a fixed height for each movie item */
+    border-radius: 10px; /* Optional: rounded corners for the movie items */
+    overflow: hidden; /* Hide overflow to maintain the box shape */
+}
+
+.movie img {
+    width: 100%; /* Make the image fill the width of the container */
+    height: 100%; /* Make the image fill the height of the container */
+    object-fit: cover; /* Ensure the image covers the container, maintaining its aspect ratio */
+}
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <img class="logo" src="https://i.ebayimg.com/images/g/q~cAAOSwsHZnB34c/s-l300.jpg"  alt="WatchWave Logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tvshows.html">TV Shows</a>
+            <a href="movies.html">Movies</a>
+            <a href="sports.html">Sports</a>
+            <button href="signin.html">Sign In</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 style="font-size: 80px; margin: 50px;">Popular TV Shows</h2>
+        <p style="font-size: 40px;">Check out the latest TV shows on WatchWave.</p>
+        
+        <div class="carousel">
+            <div class="movie">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/trailers/episode_poster/45747_Stranger%20Things%202.jpg" alt="Breaking Bad" class="e">
+            </div>
+            <div class="movie">
+                <img src="https://w0.peakpx.com/wallpaper/225/82/HD-wallpaper-game-of-thrones-game-of-thrones-iron-throne.jpg" alt="Game of Thrones" class="e">
+            </div>
+            <div class="movie">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/friends-tv-series-poster.jpg" alt="Friends" class="e">
+            </div>
+            <div class="movie">
+                <img src="https://c4.wallpaperflare.com/wallpaper/895/242/524/breaking-bad-walter-white-bryan-cranston-yellow-background-wallpaper-preview.jpg" alt="Stranger Things" class="e">
+            </div>
+        </div>
+    </div>
+
+   
+    <center><div class="footer">
+        <p>&copy; 2024 WatchWave. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div></center>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - WatchWave</title>
+    
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #141414;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 5%;
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar .logo {
+            width: 220px;
+            cursor: pointer;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Sign In Button Styling */
+        .navbar .nav-links button {
+            background-color: #e50914; /* Red color */
+            padding: 12px 25px;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar .nav-links button:hover {
+            background-color: #f40612; /* Darker red on hover */
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px 5%;
+            gap: 20px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .movie {
+            position: relative;
+            flex-shrink: 0;
+            width: 300px; /* Adjust the width to fit more movies */
+            height: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .movie img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .movie:hover img {
+            transform: scale(1.1);
+        }
+
+        .movie-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .movie-info h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .movie-info p {
+            font-size: 18px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <img class="logo" src="https://i.ebayimg.com/images/g/q~cAAOSwsHZnB34c/s-l300.jpg" alt="WatchWave Logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tvshows.html">TV Shows</a>
+            <a href="movies.html">Movies</a>
+            <a href="sports.html">Sports</a>
+            <a href="signin.html"><button>Sign In</button></a>
+        </div>
+    </div>
+
+    <!-- Movies Content -->
+    <div class="content">
+        <h1 style="font-size: 80px;">Popular Movies</h1>
+        <p style="font-size: 40px;">Browse through our collection of the most popular movies!</p>
+
+        <!-- Movies Carousel -->
+        <div class="carousel">
+            <!-- Movie 1 -->
+            <div class="movie">
+                <img src="https://w0.peakpx.com/wallpaper/872/1020/HD-wallpaper-2021-avatar-2-films-poster.jpg" alt="Avatar 2">
+                <div class="movie-info">
+                    <h3>Avatar 2</h3>
+                    <p>$15.99 | Rating: 4.5/5</p>
+                </div>
+            </div>
+            <!-- Movie 2 -->
+            <div class="movie">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX1000_.jpg" alt="Avengers Endgame">
+                <div class="movie-info">
+                    <h3>Avengers: Endgame</h3>
+                    <p>$12.99 | Rating: 4.8/5</p>
+                </div>
+            </div>
+            <!-- Movie 3 -->
+            <div class="movie">
+                <img src="https://i.redd.it/pvqs8a8zjdlb1.jpg" alt="Avengers Endgame">
+                <div class="movie-info">
+                    <h3>Avengers: Endgame</h3>
+                    <p>$13.99 | Rating: 4.7/5</p>
+                </div>
+            </div>
+            <!-- Movie 4 -->
+            <div class="movie">
+                <img src="https://e0.pxfuel.com/wallpapers/104/660/desktop-wallpaper-interstellar-interstellar-movie-poster-background-film-poster-thumbnail.jpg" alt="Interstellar">
+                <div class="movie-info">
+                    <h3>Interstellar</h3>
+                    <p>$14.99 | Rating: 4.9/5</p>
+                </div>
+            </div>
+            <!-- Movie 5 -->
+            <div class="movie">
+                <img src="https://c4.wallpaperflare.com/wallpaper/764/590/391/inception-leonardo-dicaprio-movie-posters-2400x3500-entertainment-movies-hd-art-wallpaper-preview.jpg" alt="Inception">
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <p>$11.99 | Rating: 4.8/5</p>
+                </div>
+            </div>
+            <!-- Movie 6 -->
+            <div class="movie">
+                <img src="https://images.moviesanywhere.com/5a7e82e7749d6dd8e447fcfeec50c064/55462afc-41ad-4322-ad46-1caca29fcc36.jpg" alt="Spider-Man: No Way Home">
+                <div class="movie-info">
+                    <h3>Spider-Man: No Way Home</h3>
+                    <p>$16.99 | Rating: 4.7/5</p>
+                </div>
+            </div>
+            <!-- Movie 7 -->
+            <div class="movie">
+                <img src="https://images.moviesanywhere.com/2271fb6537629d3059278a2178dbc3d8/3c028b6c-7b15-4e15-aae4-2c02ebfe2a4a.jpg" alt="The Matrix Resurrections">
+                <div class="movie-info">
+                    <h3>The Matrix Resurrections</h3>
+                    <p>$13.99 | Rating: 4.0/5</p>
+                </div>
+            </div>
+            <!-- Movie 8 -->
+            <div class="movie">
+                <img src="https://play-lh.googleusercontent.com/HjF5AQGaHCptfrLnOBj3wBqkmEJyWHjLKzwwufL0G2JDXWmnpIciZpx9zUMZgvzOrnNe" alt="Jumanji: Welcome to the Jungle">
+                <div class="movie-info">
+                    <h3>Jumanji: Welcome to the Jungle</h3>
+                    <p>$10.99 | Rating: 4.3/5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 WatchWave. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+</body>
+</html>

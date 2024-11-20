@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchWave - Stream Movies and TV Shows</title>
+    
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #141414;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 5%;
+            position: sticky;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000; /* Ensures navbar stays on top of other content */
+        }
+
+        .navbar .logo {
+            width: 120px;
+            cursor: pointer;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-links a,
+        .navbar .nav-links button {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .navbar .nav-links button {
+            background-color: #e50914;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-image: url('https://img.freepik.com/free-photo/movie-background-collage_23-2149876028.jpg'); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #e50914;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #141414;
+            padding: 40px 5%;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #444;
+        }
+
+        .footer p {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .footer .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer .footer-links a {
+            color: #777;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Hidden by default */
+        #formContainer {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* Adjustments for responsive design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 50px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .hero button {
+                font-size: 14px;
+                padding: 12px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 14px;
+            }
+
+            .hero button {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <img class="logo" src="https://i.ebayimg.com/images/g/q~cAAOSwsHZnB34c/s-l300.jpg" alt="WatchWave Logo">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="tvshows.html">TV Shows</a>
+            <a href="movies.html">Movies</a>
+            <a href="sports.html">Sports</a>
+            <!-- Direct Link to Sign In Page -->
+            <a href="signin.html"><button>Sign In</button></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Watch the Best Movies and TV Shows</h1>
+            <p>Stream unlimited entertainment on any device</p>
+            <button>Start Watching</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 WatchWave. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div> 
+
+</body>
+
+</html>
